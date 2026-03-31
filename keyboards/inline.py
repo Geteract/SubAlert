@@ -44,8 +44,7 @@ def get_subscription_actions(subscription_id: int) -> InlineKeyboardMarkup:
     """Клавиатура действий с подпиской"""
     return InlineKeyboardMarkup(inline_keyboard=[
         [
-            InlineKeyboardButton(text=" Отметить оплату", callback_data=f"pay_{subscription_id}"),
-            InlineKeyboardButton(text=" Редактировать", callback_data=f"edit_{subscription_id}")
+            InlineKeyboardButton(text=" Отметить оплату", callback_data=f"pay_{subscription_id}")
         ],
         [
             InlineKeyboardButton(text=" Приостановить", callback_data=f"pause_{subscription_id}"),
